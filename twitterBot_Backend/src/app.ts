@@ -1,3 +1,7 @@
-import { funhello } from "./hello";
+//https://twitter.com/home
 
-funhello();
+async function start() {
+  const res=await fetch('https://twitter.com/home');
+  console.log(await res.text())
+}
+start();
